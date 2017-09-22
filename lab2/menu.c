@@ -1,72 +1,74 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<string.h>
 void help()
 {
-    printf("This is a simple command line!");
-    printf("You can use the following commands for help:");
-    printf("----help-----for some help you want");
-    printf("----hello----An interface of my command menu");
-    printf("----add------help you to add two numbers");
-    printf("----sub------help you to make a subtraction of two numbers");
-    printf("----mult-----help you to make a multiplication of two numbers");
-    printf("----divi-----help you to make a division of two numbers");
-    printf("----compare--help you to make a comparation of two numbers");
-    printf("----time-----help you to know the immediate time");
-    printf("----quit-----help you quit the menu of command");
+    printf("This is a simple command line!\n");
+    printf("You can use the following commands for help:\n");
+    printf("----help-----for some help you want\n");
+    printf("----hello----An interface of my command menu\n");
+    printf("----add------help you to add two numbers\n");
+    printf("----sub------help you to make a subtraction of two numbers\n");
+    printf("----mult-----help you to make a multiplication of two numbers\n");
+    printf("----divi-----help you to make a division of two numbers\n");
+    printf("----compare--help you to make a comparation of two numbers\n");
+    printf("----time-----help you to know the immediate time\n");
+    printf("----quit-----help you quit the menu of command\n");
 }
 void hello()
 {
-    printf("Welcome to my command of menu,huve fun! ^_^");    
+    printf("Welcome to my command of menu,huve fun! ^_^\n");    
 }
 void add()
 {
-    double a,b;
-    printf("please input two numbers:");
-    scanf("%lf %lf",&a,&b);
-    double c = a+b;
-    printf("Result:a+b= %lf\n",c);
+    int a,b;
+    printf("please input two numbers:\n");
+    scanf("%d %d",&a,&b);
+    int c = a+b;
+    printf("Result:a+b= %d\n",c);
 }
 void sub()
 {
-    double a,b;
-    printf("Please input two numbers:");
-    scanf("%lf %lf",&a,&b);
-    double c=a-b;
-    printf("Result:a-b= %lf",c);
+    int a,b;
+    printf("Please input two numbers:\n");
+    scanf("%d %d",&a,&b);
+    int c=a-b;
+    printf("Result:a-b= %d",c);
 }
 void mult()
 {
-    double a,b;
-    printf("please input two numbers:");
-    scanf("%lf %lf",&a,&b);
-    double c = a*b;
-    printf("Result:a*b= %lf\n",c);
+    int a,b;
+    printf("please input two numbers:\n");
+    scanf("%d %d",&a,&b);
+    int c = a*b;
+    printf("Result:a*b= %d\n",c);
 }
 void divi()
 {
-    double a,b;
-    printf("please input two numbers:");
-    scanf("%lf %lf",&a,&b);
-    double c = a/b;
+    float a,b;
+    printf("please input two numbers:\n");
+    scanf("%f %f",&a,&b);
+    float c = a/b;
     printf("Result:a/b= %lf\n",a/b);
 }
 void compare()
 {
-    double a,b;
-    printf("Please input two numbers:");
-    double c = a-b;
+    int a,b;
+    printf("Please input two numbers:\n");
+	scanf("%d %d",&a,&b);
+    float c = a-b;
     if(c>0)
     {
-        printf("Result:a>b");
+        printf("Result:%d>%d\n",a,b);
     }
-    else if(a<0)
+    else if(c<0)
     {
-        printf("Result:a<b");
+        printf("Result:%d<%d\n",a,b);
     }
     else
     {
-        printf("Result:a=b");
+         printf("Result:%d=%d\n",a,b);
     }
 }
 void gettm()
@@ -75,7 +77,7 @@ void gettm()
     struct tm *t;
     time(&rawtime);
     t = localtime(&rawtime);
-    printf("The local time : %s",asctime(t));
+    printf("The local time : %s\n",asctime(t));
 }
 void quit()
 {
@@ -84,9 +86,11 @@ void quit()
 int main()
 {
     char cmd[20];
+	printf("Welcome to the menu,you can input help for help\n");
     while(1)
     {
-        if(strcmp(cmd,"help" == 0))
+		scanf("%s",&cmd);
+        if(strcmp(cmd,"help") == 0)
         {
             help();
         }
@@ -122,6 +126,10 @@ int main()
         {
             quit();
         }
+		else
+		{
+		    printf("There is no such command,please try again!\n");
+		}
     }
     return 0;
 }
