@@ -1,7 +1,6 @@
 
 /********************************************************************/
-/* Copyright (C) SSE-USTC, 2012-2013                                */
-/*                                                                  */
+/* Copyright (C) SSE-USTC                                           */
 /*  FILE NAME             :  linktabe.h                             */
 /*  PRINCIPAL AUTHOR      :  wjiany                                 */
 /*  DESCRIPTION           :  interface of Link Table                */
