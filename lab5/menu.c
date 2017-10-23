@@ -1,6 +1,6 @@
 
 /**************************************************************************************************/
-/* @USTC      YiYu                                                                  */
+/* @USTC      YiYu                                                                                */
 /*  FILE NAME             :  menu.c                                                               */
 /*  PRINCIPAL AUTHOR      :  wjiany                                                               */            
 /*  DESCRIPTION           :  This is a menu program                                               */
