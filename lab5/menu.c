@@ -1,7 +1,6 @@
 
 /**************************************************************************************************/
-/* Copyright (C) mc2lab.com, SSE@USTC, 2014-2015                                                  */
-/*                                                                                                */
+/* @USTC      YiYu                                                                  */
 /*  FILE NAME             :  menu.c                                                               */
 /*  PRINCIPAL AUTHOR      :  wjiany                                                               */            
 /*  DESCRIPTION           :  This is a menu program                                               */
