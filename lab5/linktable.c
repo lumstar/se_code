@@ -1,6 +1,6 @@
 
 /********************************************************************/
-/* Copyright (C) SSE-USTC                                           */
+/*  USTC    YiYu                                                    */
 /*  FILE NAME             :  linktabe.c                             */
 /*  PRINCIPAL AUTHOR      :  wjiany                                 */
 /*  DESCRIPTION           :  interface of Link Table                */
