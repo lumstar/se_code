@@ -1,6 +1,6 @@
 
 /********************************************************************/
-/*  USTC   YiYu                                        */
+/*  USTC   YiYu                                                     */
 /*  FILE NAME             :  linktabe.h                             */
 /*  PRINCIPAL AUTHOR      :  wjiany                                 */
 /*  DESCRIPTION           :  interface of Link Table                */
