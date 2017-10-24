@@ -13,6 +13,27 @@
 #include"linktable.h"
 
 /*
+ * LinkTable Node Type
+ */
+struct LinkTableNode
+{
+    struct LinkTableNode * pNext;
+};
+
+/*
+ * LinkTable Type
+ */
+struct LinkTable
+{
+    tLinkTableNode *pHead;
+    tLinkTableNode *pTail;
+    int			SumOfNode;
+    pthread_mutex_t mutex;
+};
+
+
+
+/*
  * Create a LinkTable
  */
 tLinkTable * CreateLinkTable()
