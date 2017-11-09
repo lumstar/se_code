@@ -145,19 +145,13 @@ int Quit(int argc,char * argv[])
 }
 int Add(int argc,char * argv[])
 {
-    int a,b;
-    printf("please input two numbers:\n");
-    scanf("%d %d",&a,&b);
-    int c = a+b;
+    int c = argv[1][0]+argv[2][0]-96;
     printf("Result:a+b= %d\n",c);
     return 0;
 }
 int Sub(int argc,char * argv[])
 {
-    int a,b;
-    printf("Please input two numbers:\n");
-    scanf("%d %d",&a,&b);
-    int c=a-b;
+    int c = argv[1][0]-argv[2][0];
     printf("Result:a-b= %d\n",c);
     return 0;
 }
